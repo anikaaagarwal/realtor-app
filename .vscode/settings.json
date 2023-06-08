@@ -1,6 +1,10 @@
 {
     "cSpell.words": [
+        "appspot",
+        "firebaseapp",
+        "Firestore",
         "Signin",
-        "Signup"
+        "Signup",
+        "toastify"
     ]
 }
