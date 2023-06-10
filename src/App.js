@@ -4,6 +4,7 @@ import Profile from "./pages/Profile";
 import Offers from "./pages/Offers";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import CreateListing from "./pages/CreateListing";
 import PrivateRoute from "./components/PrivateRoute";
 import ForgotPassword from "./pages/ForgotPassword";
 import Header from "./components/Header";
@@ -32,6 +33,9 @@ function App() {
         /Route> <
         Route path = "/offers"
         element = { < Offers / > }
+        /> <
+        Route path = "/create-listing"
+        element = { < CreateListing / > }
         /> <
         Route path = "/sign-in"
         element = { < SignIn / > }
