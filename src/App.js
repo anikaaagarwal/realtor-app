@@ -34,9 +34,13 @@ function App() {
         Route path = "/offers"
         element = { < Offers / > }
         /> <
+        Route path = '/create-listing'
+        element = { < PrivateRoute / > } >
+        <
         Route path = "/create-listing"
         element = { < CreateListing / > }
         /> <
+        /Route> <
         Route path = "/sign-in"
         element = { < SignIn / > }
         /> <
