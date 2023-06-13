@@ -110,6 +110,8 @@ export default function CreateListing() {
               case "running":
                 console.log("Upload is running");
                 break;
+              default:
+                // do nothing
             }
           },
           (error) => {
