@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import EditListing from "./pages/EditListing";
+import Listing from "./pages/Listing";
 
 function App() {
     return ( <
@@ -34,6 +35,9 @@ function App() {
         /Route> <
         Route path = "/offers"
         element = { < Offers / > }
+        /> <
+        Route path = "/category/:categoryName/:listingId"
+        element = { < Listing / > }
         /> <
         Route path = '/create-listing'
         element = { < PrivateRoute / > } >
