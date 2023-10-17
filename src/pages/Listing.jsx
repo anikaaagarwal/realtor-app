@@ -119,7 +119,7 @@ export default function Listing() {
               <FaChair className="text-lg mr-1" />
               {listing.furnished ? "Furnished" : "Not furnished"}
             </li>
-          </ul>
+          </ul>   
            {listing.userRef !== auth.currentUser?.uid && !contactLandlord && (
             <div className="mt-6">
               <button
@@ -134,7 +134,7 @@ export default function Listing() {
           {contactLandlord && (
             <Contact userRef={listing.userRef} listing={listing}/>
           )}
-        </div>
+        </div>      
         <div className=" w-full h-[200px] md:h-[400px] z-10 
         overflow-x-hidden mt-6 md:mt-0 md:ml-2">
           <MapContainer center={[listing.geolocation.lat, listing.geolocation.lng]} zoom={13} scrollWheelZoom={false}
